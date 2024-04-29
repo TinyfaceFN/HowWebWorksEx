@@ -1,0 +1,37 @@
+In your own terms, define the following terms:
+
+- What is HTTP? 
+    It is how servers communicate 
+- What is a URL?
+    It is a nickname for a websites IP 
+- What is DNS?
+    turns hostname into the IP address for the site 
+- What is a query string?
+    part at the end of the request that adds additional information to request 
+- What are two HTTP verbs and how are they different?
+    GET + POST, they are different as get is a request to get information from a server where post is a request to post inforamtion to that server 
+- What is an HTTP request?
+    a requesat to the server to do some action 
+- What is an HTTP response?
+    a response from the server usually in response to a request  
+- What is an HTTP header? Give a couple examples of request and response headers you have seen.
+    header is the initial url and base information such as http:someURL.com/english/us etc etc regular headers would be like https://google.com or https:/amazon.com
+- What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+    it sends a request to the server http://somesite.com/ looking for page.html after it is found it is then send back as a response and loaded on the computer in browser. If it is not found for whatever reason it will result in a corresponding error. 
+
+    ## **Part Two: Practice Tools**
+
+1. Using ***curl***, make a ***GET*** request to the *icanhazdadjoke.com* API to find all jokes involving the word “pirate”
+
+curl  https://icanhazdadjoke.com/search?term=pirate
+What did the pirate say on his 80th birthday? Aye Matey!
+What does a pirate pay for his corn? A buccaneer!
+Why couldn't the kid see the pirate movie? Because it was rated arrr!
+Why are pirates called pirates? Because they arrr!
+
+2. Use ***dig*** to find what the IP address is for *icanhazdadjoke.com*
+icanhazdadjoke.com.     0       IN      A       172.67.198.173
+icanhazdadjoke.com.     0       IN      A       104.21.66.15'
+
+3. Make a simple web page and serve it using ***python3 -m http.server***. Visit the page in a browser.
+done
